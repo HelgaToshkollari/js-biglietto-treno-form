@@ -10,7 +10,6 @@ ticketMakerEl.addEventListener ("click", function(){
     const ageDiscount = document.getElementById("age-discount");
     const ageDiscountValue = ageDiscount.value;
     const totalPrice = pricePerKm;
-    
     const numPriceDiscount20 =totalPrice * 0.8;
     const numPriceDiscount40 =totalPrice * 0.6;
     const ticketEl = document.querySelector(".price-ticket");
