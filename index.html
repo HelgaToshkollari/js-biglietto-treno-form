@@ -11,27 +11,44 @@
 </head>
 <body>
     <div class="container text-center">
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="py-3">
-            Name <input  id="user-name" type="text">
-            Km <input  id="km" type="text">
-            Age
-            <select id="age-discount">
-                <option value="minorenne">Minorenne</option>
-                <option value="maggiorenne">Maggiorenne</option>
-                <option value="over65">Over 65</option>
-               
-            </select>
-            <p class="price-ticket"></p>
-        </div>
-        <div class="py-3">
-            <button class="btn btn-primary" id="ticket-maker">Genera</button>
-            <button class="btn btn-primary" id="undo">Annulla</button>
-        </div>
-       
-        
+        <section  >
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="py-3 d-flex justify-content-center ">
+                <div>
+                    <label for="name">Nome Cognome</label>
+                    <input  id="name" type="text">
+
+                </div>
+                <div>
+                    <label for="km">Km da percorrere</label>
+                    <input  id="km" type="text">
+                </div>
+                <div>
+                    <label for="age">Età</label>
+                    <select id="age-discount">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                        
+                    </select>
+                    
+                </div>
+            </div>
+            <div class="py-3">
+                <button class="btn btn-primary" id="ticket-maker">Genera</button>
+                <button class="btn btn-primary" id="undo">Annulla</button>
+            </div>
+        </section>
+        <section>
+            
+            <div>
+                <p class="price-ticket"></p>
+            </div>
+            
+        </section>
     </div>
    
     <script src="js/main.js"></script>
+
 </body>
 </html>
