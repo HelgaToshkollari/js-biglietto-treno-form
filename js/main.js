@@ -39,6 +39,24 @@ ticketMakerEl.addEventListener ("click", function(){
     const codiceCp = Math.floor(Math.random() * 10000) + 90000;
     document.getElementById("codice-cp").innerHTML = codiceCp;
 
+    
+
+}
+)
+
+const ticketUndoEl = document.getElementById("undo");
+
+ticketUndoEl.addEventListener ("click", function(){
+
+    document.getElementById("name").value="";
+    document.getElementById("km").value="";
+    document.getElementById("age-discount").value="";
+    document.getElementById("passenger").innerHTML = "";
+    document.getElementById("discount").innerHTML = "";
+    document.getElementById("codice-cp").innerHTML = "";
+    document.getElementById("carozza").innerHTML ="";
+    document.querySelector(".price-ticket").innerHTML = "";
+
 
 })
 
